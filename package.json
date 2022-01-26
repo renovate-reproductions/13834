@@ -1,0 +1,13 @@
+{
+    "name": "test",
+    "version": "4.4.0",
+    "description": "test",
+    "private": true,
+    "engines": {
+        "npm": "^8.1.0"
+    },
+    "dependencies": {
+        "big.js": "6.1.0",
+        "numbro": "2.0.6"
+    }
+}

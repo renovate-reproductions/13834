@@ -72,7 +72,7 @@
 * Set `"binarySource": "install",` in Renovate config:
 ```
 {
-  "platform": "bitbucket",
+  "platform": "github",
   "gitAuthor": "Renovate Bot <petrovich@example.com>",
   "repositories": [
     "okgolove/renovate-npm-bug"

@@ -1,0 +1,37 @@
+{
+    "extends": [
+        "config:base",
+        ":preserveSemverRanges",
+        ":rebaseStalePrs",
+        "group:recommended"
+    ],
+    "ignorePresets": [
+        ":prHourlyLimit2"
+    ],
+    "bbUseDefaultReviewers": false,
+    "enabledManagers": [
+        "maven",
+        "npm",
+        "regex"
+    ],
+    "packageRules": [
+        {
+            "matchManagers": [
+                "npm"
+            ],
+            "recreateClosed": true,
+            "minor": {
+                "enabled": false
+            },
+            "major": {
+                "enabled": false
+            },
+            "lockFileMaintenance": {
+                "enabled": true
+            },
+            "ignoreDeps": [
+                "numbro"
+            ]
+        }
+    ]
+}
